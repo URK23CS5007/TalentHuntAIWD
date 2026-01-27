@@ -2,150 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Talent Hunt Program Registration</title>
+    <title>Talent Hunt Program</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f6f8;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            text-align: center;
-            background-color: #1f2933;
-            color: white;
-            padding: 15px;
-        }
-
-        section {
-            max-width: 800px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-        }
-
-        img {
-            width: 100%;
-            height: auto;
-            margin-bottom: 15px;
-        }
-
-        video, audio {
-            width: 100%;
-            margin: 10px 0;
-        }
-
-        form {
-            margin-top: 20px;
-        }
-
-        label {
-            font-weight: bold;
-        }
-
-        input, select, textarea {
-            width: 100%;
-            padding: 8px;
-            margin: 8px 0 15px 0;
-        }
-
-        .radio-group {
-            margin-bottom: 15px;
-        }
-
-        button {
-            background-color: #2563eb;
-            color: white;
-            border: none;
-            padding: 10px;
-            width: 100%;
-            font-size: 16px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #1d4ed8;
-        }
-
-        footer {
-            text-align: center;
-            padding: 10px;
-            background: #e5e7eb;
-            margin-top: 20px;
-        }
-    </style>
+    <!-- External CSS Linking -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
     <h1>Talent Hunt Program 2026</h1>
-    <p>Showcase Your Skills | Sing • Dance • Act • Create</p>
+    <p>Showcase Your Talent</p>
 </header>
 
-<section>
+<section class="container">
 
-    <!-- Banner Image -->
-    <img src="Talent hunt banner.png" alt="Talent Hunt Program Banner">
+    <div class="media">
+        <img src="Talent hunt banner.png" alt="Talent Hunt Banner">
 
-    <!-- Promotional Video -->
-    <video controls>
-        <source src="talent hunt intro.mp4" type="video/mp4">
-        Your browser does not support video playback.
-    </video>
+        <video controls>
+            <source src="talent hunt intro.mp4" type="video/mp4">
+        </video>
 
-    <!-- Background / Intro Audio -->
-    <audio controls>
-        <source src="intro.mp3" type="audio/mp3">
-        Your browser does not support audio playback.
-    </audio>
+        <audio controls>
+            <source src="intro.mp3" type="audio/mp3">
+        </audio>
+    </div>
 
-    <!-- Registration Form -->
-    <form action="#" method="post">
+    <div class="form-box">
+        <form>
+            <label>Name</label>
+            <input type="text" required>
 
-        <label>Full Name:</label>
-        <input type="text" name="name" required>
+            <label>Email</label>
+            <input type="email" required>
 
-        <label>Email Address:</label>
-        <input type="email" name="email" required>
+            <label>Talent</label>
+            <select required>
+                <option>Singing</option>
+                <option>Dancing</option>
+                <option>Acting</option>
+            </select>
 
-        <label>Date of Birth:</label>
-        <input type="date" name="dob" required>
-
-        <label>Gender:</label>
-        <div class="radio-group">
-            <input type="radio" name="gender" value="Male" required> Male
-            <input type="radio" name="gender" value="Female"> Female
-            <input type="radio" name="gender" value="Other"> Other
-        </div>
-
-        <label>Select Your Talent:</label>
-        <select name="talent" required>
-            <option value="">-- Select --</option>
-            <option>Singing</option>
-            <option>Dancing</option>
-            <option>Acting</option>
-            <option>Painting</option>
-            <option>Instrumental Music</option>
-        </select>
-
-        <label>Brief Description of Your Talent:</label>
-        <textarea rows="4" placeholder="Describe your performance..." required></textarea>
-
-        <label>Upload Sample (Image / Video / PDF):</label>
-        <input type="file" accept=".jpg,.png,.mp4,.pdf" required>
-
-        <button type="submit">Register Now</button>
-
-    </form>
+            <button type="submit">Register</button>
+        </form>
+    </div>
 
 </section>
 
 <footer>
-    <p>© 2026 Talent Hunt Program | College Event Portal</p>
+    <p>© 2026 Talent Hunt Program</p>
 </footer>
 
 </body>
