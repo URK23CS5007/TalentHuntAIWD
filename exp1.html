@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Talent Hunt Program Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <h1>Talent Hunt Program 2026</h1>
+    <p>Showcase your talent in Singing, Dancing, Acting & more!</p>
+
+    <!-- TC02: Image Media -->
+    <img src="Talent hunt banner.png" alt="Talent Hunt Event Banner" width="100%">
+
+    <br><br>
+
+    <!-- TC03: Video Media -->
+    <video width="100%" controls>
+        <source src="talent hunt intro.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <br><br>
+
+    <!-- TC04: Audio Media -->
+    <audio controls>
+        <source src="intro.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <hr>
+
+    <!-- TC05–TC09: Event Registration Form -->
+    <h2>Event Registration Form</h2>
+
+    <form>
+
+        <!-- Text Input -->
+        <label>Full Name:</label><br>
+        <input type="text" name="name" required><br><br>
+
+        <!-- Email Input -->
+        <label>Email Address:</label><br>
+        <input type="email" name="email" required><br><br>
+
+        <!-- Date Input -->
+        <label>Date of Birth:</label><br>
+        <input type="date" name="dob" required><br><br>
+
+        <!-- Radio Buttons -->
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" required> Male
+        <input type="radio" name="gender"> Female
+        <input type="radio" name="gender"> Other
+        <br><br>
+
+        <!-- Select Menu -->
+        <label>Select Your Talent:</label><br>
+        <select required>
+            <option value="">-- Select --</option>
+            <option>Singing</option>
+            <option>Dancing</option>
+            <option>Acting</option>
+            <option>Painting</option>
+            <option>Instrumental Music</option>
+        </select>
+        <br><br>
+
+        <!-- Textarea -->
+        <label>Describe Your Talent:</label><br>
+        <textarea rows="4" cols="40" required></textarea>
+        <br><br>
+
+        <!-- File Upload -->
+        <label>Upload Sample (Image / Video / PDF):</label><br>
+        <input type="file" required>
+        <br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Register">
+
+    </form>
+
+    <hr>
+
+    <p>© 2026 Talent Hunt Program | College Event Portal</p>
+
+</body>
+</html>
